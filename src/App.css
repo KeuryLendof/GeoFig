@@ -14,6 +14,25 @@
   min-height: 100vh;
 }
 
+.hero-image{
+  min-height: 100vh;
+  background-image: url("../src/assets/images/principal.jfif");
+  background-repeat: no-repeat;
+  color: #d9d9d9;
+}
+.hero-image div{
+  min-height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.664);
+}
+.hero-image h1{
+  font-size: 5vw;
+  width: 85vw;
+}
+
 main{
   flex-grow: 1;
   width: 95%;
