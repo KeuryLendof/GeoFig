@@ -8,7 +8,6 @@ const Principal = () =>{
     return(
         <div className="contenedorPrincipal">
             <main>
-                
                 <div className="card">
                     <img src=""/>
                     <h4>Cuadrado</h4>
