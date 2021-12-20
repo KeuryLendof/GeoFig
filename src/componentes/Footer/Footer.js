@@ -1,4 +1,4 @@
-import "../App.css"
+import "./Footer.css"
 
 
 const Footer = ()=>{
@@ -6,7 +6,7 @@ const Footer = ()=>{
 
 
     return(
-        <footer class="titulares">
+        <footer className="footer">
             <h2>Sticky Footer</h2>
         </footer>
     )
