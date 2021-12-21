@@ -36,8 +36,10 @@ main{
 
 
 main .card{
-    width: 330px;
-    height: 350px;
+    /* width: 330px;
+    height: 350px; */
+    width: 290px;
+    height: 335px;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -52,7 +54,9 @@ main .card:hover{
 }
 
 main .card img{
-    width: 330px;
+    /* width: 330px;
+    height: 220px; */
+    width: 220px;
     height: 220px;
 }
 
