@@ -12,12 +12,14 @@ const Principal = () =>{
                     <h1>Calcular el area de las figuras geometricas</h1>
                 </div>
             </article>
+            <br></br>
+            <br></br>
             <div className="contenedorPrincipal">
                 <main>
                     <div className="card">
                         <img src={require('../../assets/images/cuadrado.png')}/>
                         <h4>Cuadrado</h4>
-                        <a href="#">Calcular Area</a>
+                        <a href="/cuadrado">Calcular Area</a>
                     </div>
 
                     <div className="card">
@@ -39,20 +41,32 @@ const Principal = () =>{
                     </div>
 
                     <div className="card">
-                        <img src={require('../../assets/images/triangulo.png')}/>
-                        <h4>Login</h4>
+                        <img src={require('../../assets/images/rombo.png')}/>
+                        <h4>Rombo</h4>
                         <a href="">Calcular Area</a>
                     </div>
 
                     <div className="card">
-                        <img src={require('../../assets/images/triangulo.png')}/>
-                        <h4>Login</h4>
+                        <img src={require('../../assets/images/trapecio.png')}/>
+                        <h4>Trapecio</h4>
                         <a href="">Calcular Area</a>
                     </div>
 
                     <div className="card">
-                        <img src={require('../../assets/images/triangulo.png')}/>
-                        <h4>Login</h4>
+                        <img src={require('../../assets/images/elipse.png')}/>
+                        <h4>Elipse</h4>
+                        <a href="">Calcular Area</a>
+                    </div>
+
+                    <div className="card">
+                        <img src={require('../../assets/images/pentagono.png')}/>
+                        <h4>Pentagono</h4>
+                        <a href="">Calcular Area</a>
+                    </div>
+
+                    <div className="card">
+                        <img src={require('../../assets/images/hexagono.png')}/>
+                        <h4>Hexagono</h4>
                         <a href="">Calcular Area</a>
                     </div>
                     

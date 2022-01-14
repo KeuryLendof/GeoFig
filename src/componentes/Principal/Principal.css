@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    
 }
 
 .hero-image{
@@ -25,7 +26,7 @@
 
 main{
     flex-grow: 1;
-    width: 95%;
+    width: 90%;
     max-width: 1500px;
     display: flex;
     flex-wrap: wrap;
@@ -36,10 +37,10 @@ main{
 
 
 main .card{
-    /* width: 330px;
-    height: 350px; */
-    width: 290px;
-    height: 335px;
+    width: 330px;
+    height: 350px;
+    /* width: 290px;
+    height: 335px; */
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
