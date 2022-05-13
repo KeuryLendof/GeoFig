@@ -7,13 +7,6 @@ const Principal = () =>{
 
     return(
         <div>
-            <article class="hero-image">
-                <div>
-                    <h1>Calcular el area de las figuras geometricas</h1>
-                </div>
-            </article>
-            <br></br>
-            <br></br>
             <div className="contenedorPrincipal">
                 <main>
                     <div className="card">

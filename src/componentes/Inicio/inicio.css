@@ -1,0 +1,15 @@
+.contenedorInicio{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 0;
+    overflow: hidden;
+}
+
+.productive{
+    color: #fff;
+    display: grid;
+    gap: 3em;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
