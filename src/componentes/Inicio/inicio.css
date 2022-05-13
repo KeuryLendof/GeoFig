@@ -38,7 +38,13 @@
     padding: 12px 25px;
     text-decoration: none;
     border-radius: 30px;
-    font-size: 18px;
+    font-size: 20px;
+}
+
+.productive_arrow{
+    width: 30px;
+    margin-left: .1em;
+    vertical-align: middle;
 }
 
 
@@ -63,7 +69,38 @@
     }
 
     .imagen img{
-        display: none;
+       order: 1;
+    }
+    .productive_text{
+        order: 2;
     }
 } 
  
+@media screen and (max-width: 575px){
+    .imagen img{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .imagen img{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .imagen img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .imagen img{
+        width: 250px;
+        height: 250px;
+    }
+}
+
