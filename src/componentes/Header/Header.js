@@ -18,7 +18,7 @@ class Header extends Component{
         return(
             <div className="contenedorHeader">
                 <header>
-                    <div class="brand-title">GeoFig</div>
+                    <h1 class="brand-title">GeoFig</h1>
                     <a href="#" class="toggle-button">
                     <span class="bar"></span>
                     <span class="bar"></span>

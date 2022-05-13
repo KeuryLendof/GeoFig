@@ -11,7 +11,7 @@ const inicio =()=>{
         <div className="productive contenedorInicio">
 
             <section className="texto">
-                <h1>Calcular el area de las figuras geometricas</h1>
+                <h3>Calcular el area de las figuras geometricas</h3>
             </section>
 
             <section className="imagen">
