@@ -31,6 +31,8 @@ main .card{
     margin: 20px;
     text-align: center;
     transition: all 0.25s;
+    text-decoration: none;
+    color: #001858;
 }
 
 main .card:hover{
