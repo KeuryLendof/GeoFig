@@ -8,7 +8,7 @@ const Principal = () =>{
     return(
         <div className="contenedorPrincipal">
             <main>
-                <a href="" className="card">
+                <a href="/cuadrado" className="card">
                     <img src={require('../../assets/images/cuadrado.png')}/>
                     <h3>Cuadrado</h3>
                 </a>
@@ -51,6 +51,26 @@ const Principal = () =>{
                 <a href="" className="card">
                     <img src={require('../../assets/images/hexagono.png')}/>
                     <h3>Hexagono</h3>
+                </a>
+
+                <a href="" className="card">
+                    <img src={require('../../assets/images/cilindro.png')}/>
+                    <h3>Cilindro</h3>
+                </a>
+
+                <a href="" className="card">
+                    <img src={require('../../assets/images/cono.png')}/>
+                    <h3>Cono</h3>
+                </a>
+
+                <a href="" className="card">
+                    <img src={require('../../assets/images/cuadra.png')}/>
+                    <h3>Cubo</h3>
+                </a>
+
+                <a href="" className="card">
+                    <img src={require('../../assets/images/esfera.png')}/>
+                    <h3>Esfera</h3>
                 </a>
                 
             </main>
