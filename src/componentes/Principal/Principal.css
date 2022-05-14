@@ -48,7 +48,7 @@ main .card img{
     height: 180px;
 }
 
-main .card h4{
+/* main .card h4{
     font-weight: 600;
 }
 
@@ -56,7 +56,7 @@ main .card a {
     font-weight: 600;
     text-decoration: none;
     color: #F582AE;
-}
+} */
 
 /* @media screen and (max-width: 1280px){
     main{
