@@ -11,7 +11,10 @@ function Rutas(){
         <Routes>
 
             <Route path="/" exact element={<App/>}/>
-            <Route path="/figuras" element={<Figuras/>}/>
+
+            <Route path="figuras" element={<Figuras/>}>
+                <Route path=":id" element={<Figuras/>} />
+            </Route>
 
         </Routes>
     )

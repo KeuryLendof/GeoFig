@@ -1,4 +1,5 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import './Figuras.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
@@ -7,33 +8,33 @@ import Footer from '../Footer/Footer';
 const Figuras = () =>{
 
 
-    const id = 'cuadrado'
+    const {id} = useParams();
 
     let reactElementUl = React.createElement(
         'ul', {
             className: 'myList'
         },
-            React.createElement('li', {className: 'li1'},'one'),
-            React.createElement('li', {id: 'li2'},'two'),
-            React.createElement('li', {id: 'li3'},'three')
+            React.createElement('li', {className: 'li1'},'soy cuadrado'),
+            React.createElement('li', {id: 'li2'},'soy cuadrado'),
+            React.createElement('li', {id: 'li3'},'soy cuadrado')
     );
 
     let reactElementU2 = React.createElement(
         'ul', {
             className: 'myList'
         },
-            React.createElement('li', {className: 'li1'},'one'),
-            React.createElement('li', {className: 'li1'},'two'),
-            React.createElement('li', {className: 'li1'},'three')
+            React.createElement('li', {className: 'li1'},'soy triangulo'),
+            React.createElement('li', {className: 'li1'},'soy triangulo'),
+            React.createElement('li', {className: 'li1'},'soy triangulo')
     );
 
     return(
         <div>
             <Header/>
-            <h1>Cuadrado</h1>
+            <h1>{id}</h1>
             { 
-                id === 'cuadrado' ? reactElementUl :
-                 id === 'cuadradoo' ? reactElementU2 : null 
+                id === 'Cuadrado' ? reactElementUl :
+                 id === 'Triangulo' ? reactElementU2 : null 
             }
             <Footer/>
         </div>

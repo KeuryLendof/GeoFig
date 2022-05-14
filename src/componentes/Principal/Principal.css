@@ -33,6 +33,7 @@ main .card{
     transition: all 0.25s;
     text-decoration: none;
     color: #001858;
+    cursor: pointer;
 }
 
 main .card:hover{
