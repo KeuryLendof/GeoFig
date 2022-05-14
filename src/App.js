@@ -71,6 +71,16 @@ function App() {
       id: 13,
       nombre: 'Esfera',
       imagen: require('./assets/images/esfera.png')
+    },
+    {
+      id: 14,
+      nombre: 'Heptagono',
+      imagen: require('./assets/images/heptagono.png')
+    },
+    {
+      id: 15,
+      nombre: 'Octagono',
+      imagen: require('./assets/images/octagono.png')
     }
   ]
 

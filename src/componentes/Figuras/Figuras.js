@@ -11,7 +11,7 @@ const Figuras = () =>{
 
     const {id} = useParams();
 
-    let reactElementUl = React.createElement(
+    let cuadrado = React.createElement(
         'ul', {
             className: 'myList'
         },
@@ -20,7 +20,7 @@ const Figuras = () =>{
             React.createElement('li', {id: 'li3'},'soy cuadrado')
     );
 
-    let reactElementU2 = React.createElement(
+    let triangulo = React.createElement(
         'ul', {
             className: 'myList'
         },
@@ -35,8 +35,9 @@ const Figuras = () =>{
             <main className='figurasContainer'>
                 <h1>{id}</h1>
                 { 
-                    id === 'Cuadrado' ? reactElementUl :
-                    id === 'Triangulo' ? reactElementU2 : null 
+                    id === 'Cuadrado' ? cuadrado :
+                    id === 'Triangulo' ? triangulo :
+                    null 
                 }
             </main>
             <Footer/>
