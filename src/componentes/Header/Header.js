@@ -18,7 +18,7 @@ class Header extends Component{
         return(
             <div className="contenedorHeader">
                 <header>
-                    <a class="brand-title">
+                    <a href='/' class="brand-title">
                         <img src={require('../../assets/images/forma-abstracta.png')} alt/>
                         GeoFig
                     </a>

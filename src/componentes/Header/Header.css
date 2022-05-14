@@ -9,6 +9,10 @@ header{
     margin: 0 auto;
     padding: 25px 0;
 }
+
+header a{
+    text-decoration: none;
+}
   
 .brand-title {
     color: #001858;

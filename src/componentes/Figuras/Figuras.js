@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import './Figuras.css';
+import '../../App.css'
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
@@ -29,13 +30,15 @@ const Figuras = () =>{
     );
 
     return(
-        <div>
+        <div className='App'>
             <Header/>
-            <h1>{id}</h1>
-            { 
-                id === 'Cuadrado' ? reactElementUl :
-                 id === 'Triangulo' ? reactElementU2 : null 
-            }
+            <main className='figurasContainer'>
+                <h1>{id}</h1>
+                { 
+                    id === 'Cuadrado' ? reactElementUl :
+                    id === 'Triangulo' ? reactElementU2 : null 
+                }
+            </main>
             <Footer/>
         </div>
     )
