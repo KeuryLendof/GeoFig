@@ -10,12 +10,15 @@ const Footer = ()=>{
 
             <h2>Contact Me</h2>
 
-            <form id="form">
+            <form name="formulario-contacto" netlify>
                 <input type="email" placeholder="Email" className="join_inputt" required/>
 
                 <textarea id="texto" placeholder="Mensaje" required></textarea>
 
-                <button>Enviar</button>
+                <button>
+                    <img src={require('../../assets/images/gmail (2).png')} alt=''/>
+                    Enviar
+                </button>
             </form>
 
             <section>

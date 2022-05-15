@@ -16,6 +16,24 @@ form{
     margin: 0 auto;
 }
 
+form button{
+    display: inline-block;
+    background-color: #F582AE;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin-top: 6px;
+    font: inherit;
+}
+
+form button img{
+    width: 25px;
+    margin-right: .1em;
+    vertical-align: middle;
+    margin-bottom: 3px;
+}
+
 .join_inputt{
     padding: 15px 20px;
     font: inherit;
