@@ -16,7 +16,7 @@ form{
     margin: 0 auto;
 }
 
-.join_input{
+.join_inputt{
     padding: 15px 20px;
     font: inherit;
     border-radius: 5px;
@@ -28,7 +28,8 @@ form{
 
 textarea{
     margin-top: 6px;
-    padding: 30px;
+    /* padding: 30px; */
+    padding: 15px 20px;
     width: 90%;
     height: 90px;
     max-height: 260px;

@@ -11,9 +11,11 @@ const Footer = ()=>{
             <h2>Contact Me</h2>
 
             <form id="form">
-                <input type="email" placeholder="Email" className="join_input"/>
+                <input type="email" placeholder="Email" className="join_inputt" required/>
 
                 <textarea id="texto" placeholder="Mensaje" required></textarea>
+
+                <button>Enviar</button>
             </form>
 
             <section>
