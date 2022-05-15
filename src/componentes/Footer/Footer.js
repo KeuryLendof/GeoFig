@@ -8,6 +8,14 @@ const Footer = ()=>{
     return(
         <footer className="footer">
 
+            <h2>Contact Me</h2>
+
+            <form id="form">
+                <input type="email" placeholder="Email" className="join_input"/>
+
+                <textarea id="texto" placeholder="Mensaje" required></textarea>
+            </form>
+
             <section>
 
                 <div className="footer__social">

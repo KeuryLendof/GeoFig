@@ -1,27 +1,47 @@
 .footer{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 25px 0;
+    padding: 10px 0;
+    text-align: center;
 }
 
-.brand-title {
+.footer h2{
+    font-size: 2rem;
     color: #001858;
-    display: block;
-    font-size: 3.5rem;
-    font-weight: 650;
-    text-decoration: none;
 }
-.brand-title img{
-    margin-right: .1em;
-    vertical-align: middle;
-    margin-bottom: 7px;
-    width: 62px;
-    height: 62px;
+
+form{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.join_input{
+    padding: 15px 20px;
+    font: inherit;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-bottom: 0.5em;
+    width: 90%;
+}
+
+textarea{
+    margin-top: 6px;
+    padding: 30px;
+    width: 90%;
+    height: 90px;
+    max-height: 260px;
+    font-size: 1rem;
+    background: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+textarea::-webkit-scrollbar{
+    width: 0px;
 }
 
 .footer__social{
