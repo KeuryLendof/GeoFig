@@ -32,13 +32,28 @@ const Figuras = () =>{
     return(
         <div className='App'>
             <Header/>
-            <main className='figurasContainer'>
-                <h1>{id}</h1>
-                { 
-                    id === 'Cuadrado' ? cuadrado :
-                    id === 'Triangulo' ? triangulo :
-                    null 
-                }
+            <main className='productiveFiguras figurasContainer'>
+                <section className="figuraInput">
+                    <h1>{id}</h1>
+                    {/* { 
+                        id === 'Cuadrado' ? cuadrado :
+                        id === 'Triangulo' ? triangulo :
+                        null 
+                    } */}
+                    <div className="form__div">
+                        <input type="text" className="form__input" placeholder=" "/>
+                        <label for="" className="form__label">Email</label>
+                    </div>
+                    <br/>
+                    <div className="form__div">
+                        <input type="password" className="form__input" placeholder=" "/>
+                        <label for="" className="form__label">Password</label>
+                    </div>
+                </section>
+
+                <section className="figuraImg">
+                    <img src={require('../../assets/images/cuadrado.png')}/>
+                </section>
             </main>
             <Footer/>
         </div>
