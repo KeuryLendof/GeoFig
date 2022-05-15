@@ -1,3 +1,4 @@
+import { useState } from "react";
 import './App.css';
 import Header from './componentes/Header/Header';
 import Principal from './componentes/Principal/Principal';
@@ -84,11 +85,21 @@ function App() {
     }
   ]
 
+  const [buscar, setBuscar] = useState('');
+
 
   return (
     <div className="App">
       <Header />
       <Inicio />
+      <div className="join" id="search">
+        <div className="join_container">
+          <h2 className="join_title">Busca tus figuras geometricas aqui!</h2>
+          <form action="" className="join_form">
+            <input type="text" placeholder="Ejemplo 'cuadrado' " className="join_input" onChange={e => setBuscar(e.target.value)} />
+          </form>
+        </div>
+      </div>
       <Principal figuras={figuras}/>
       <Footer />
     </div>

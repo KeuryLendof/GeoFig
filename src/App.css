@@ -1,3 +1,55 @@
 .App{
     background: #FAEEDE;
 }
+
+/*Buscador*/
+
+.join{
+    color: #FAEEDE;
+    padding: 40px 0;
+}
+
+.join_container{
+    background-color: #8BD3DD;
+    box-shadow: 1px 1px 10px -5px rgb(255, 255, 255, .5);
+    border-radius: 12px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    text-align: center;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.join_container h2{
+    padding-top: 14px;
+}
+
+.join_title{
+    font-size: 2rem;
+    color: #001858;
+}
+
+.join_form{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+}
+
+.join_input{
+    padding: 15px 20px;
+    font: inherit;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    margin-bottom: 1.3em;
+}
+
+@media screen and (max-width: 410px){
+    .join_container{
+        width: 77%;
+    }
+    .join_title{
+        font-size: 1.6rem;
+    }
+}
+
+/*fin*/
