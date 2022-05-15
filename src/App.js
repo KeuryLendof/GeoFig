@@ -100,7 +100,7 @@ function App() {
           </form>
         </div>
       </div>
-      <Principal figuras={figuras}/>
+      <Principal figuras={figuras} buscar={buscar}/>
       <Footer />
     </div>
 

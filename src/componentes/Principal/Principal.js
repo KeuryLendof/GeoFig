@@ -1,7 +1,11 @@
 import "./Principal.css"
 
 
-const Principal = ({figuras}) =>{
+const Principal = ({figuras, buscar}) =>{
+
+    const filtro = figuras.filter((dato)=>
+        dato.nombre.toLowerCase().includes(buscar.toLowerCase())
+    )
 
     const redireccionar = (id) => {
         window.location.href=`/figuras/${id}`;
@@ -12,7 +16,7 @@ const Principal = ({figuras}) =>{
 
             <main>
 
-                {figuras.map((f)=>{
+                {filtro.map((f)=>{
                     return(
                         <section className="card" onClick={()=>redireccionar(f.nombre)}>
                             <img src={f.imagen}/>
