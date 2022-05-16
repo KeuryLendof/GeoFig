@@ -10,7 +10,7 @@
     overflow: hidden;
 }
 
-main{
+.mainPrincipal{
     color: #001858;
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@ main{
 }
 
 
-main .card{
+.mainPrincipal .card{
     /* width: 330px;
     height: 350px; */
     width: 250px;
@@ -36,12 +36,12 @@ main .card{
     cursor: pointer;
 }
 
-main .card:hover{
+.mainPrincipal .card:hover{
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-main .card img{
+.mainPrincipal .card img{
     /* width: 330px;
     height: 220px; */
     padding: 22px 0;

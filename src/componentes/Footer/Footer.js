@@ -10,7 +10,7 @@ const Footer = ()=>{
 
             <h2>Contact Me</h2>
 
-            <form name="formulario-contacto" netlify>
+            <form className="formContacto" name="formulario-contacto" netlify>
                 <input type="email" placeholder="Email" className="join_inputt" required/>
 
                 <textarea id="texto" placeholder="Mensaje" required></textarea>

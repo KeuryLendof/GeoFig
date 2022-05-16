@@ -14,7 +14,7 @@ const Principal = ({figuras, buscar}) =>{
     return(
         <div className="contenedorPrincipal">
 
-            <main>
+            <main className="mainPrincipal">
 
                 {filtro.map((f)=>{
                     return(

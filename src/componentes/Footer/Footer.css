@@ -11,12 +11,12 @@
     color: #001858;
 }
 
-form{
+.formContacto{
     width: 70%;
     margin: 0 auto;
 }
 
-form button{
+.formContacto button{
     display: inline-block;
     background-color: #F582AE;
     padding: 12px 20px;
@@ -27,7 +27,7 @@ form button{
     font: inherit;
 }
 
-form button img{
+.formContacto button img{
     width: 25px;
     margin-right: .1em;
     vertical-align: middle;
