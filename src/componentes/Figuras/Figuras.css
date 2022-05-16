@@ -94,3 +94,14 @@
   }
   
 }
+
+@media screen and (max-width: 500px){
+  .figuraInput{
+    width: 90%;
+  }
+
+  .subContenedorFiguras{
+    border-radius: 0px;
+  }
+  
+}
