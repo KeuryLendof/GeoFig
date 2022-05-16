@@ -24,11 +24,13 @@
 
 .subContenedorFiguras .figuraImg{
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .subContenedorFiguras .figuraImg img{
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
 
 .figuraInput{
@@ -71,4 +73,24 @@
   width: 90%;
   text-align: right;
   grid-column: span 2;
+}
+
+
+@media screen and (max-width: 800px){
+  .subContenedorFiguras{
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .subContenedorFiguras{
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .subContenedorFiguras{
+    width: 94%;
+  }
+  
 }
