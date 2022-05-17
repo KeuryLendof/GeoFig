@@ -29,6 +29,10 @@ const Figuras = () =>{
             React.createElement('li', {className: 'li1'},'soy triangulo')
     );
 
+    const redireccionar =(e)=>{
+       e.preventDefault();
+    }
+
     return(
         <div className='App'>
             <Header/>
@@ -50,7 +54,7 @@ const Figuras = () =>{
                             id === 'Triangulo' ? triangulo :
                             null 
                         } */}
-                        <form className='formFigura'>
+                        <form onSubmit={redireccionar} className='formFigura'>
                             <article className='gridForm'>
                                 <label>Lado (A)</label>
                                 <input type="number" placeholder="0.0" className="inputFigura" required/>
