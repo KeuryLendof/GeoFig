@@ -12,12 +12,17 @@ const Figuras = () =>{
     const {id} = useParams();
 
     let cuadrado = React.createElement(
-        'ul', {
-            className: 'myList'
+        'form',{
+            onSubmit:redireccionar,
+            className:'formFigura'
         },
-            React.createElement('li', {className: 'li1'},'soy cuadrado'),
-            React.createElement('li', {id: 'li2'},'soy cuadrado'),
-            React.createElement('li', {id: 'li3'},'soy cuadrado')
+        'article',{
+            className: 'gridForm'
+        },
+            React.createElement('label', {className: 'formLabel'},'Lado (A)'),
+            React.createElement('input', {className:"inputFigura", placeholder:"0.0", type:'number'}),
+            React.createElement('label', {className: 'formLabel'},'Lado (B)'),
+            React.createElement('input', {className:"inputFigura", placeholder:"0.0", type:'number'})
     );
 
     let triangulo = React.createElement(
@@ -31,6 +36,16 @@ const Figuras = () =>{
 
     const redireccionar =(e)=>{
        e.preventDefault();
+
+       calculando();
+    }
+
+    const calculando=()=>{
+        let boton = document.querySelector('button')
+
+        boton.innerText = 'Calculando......'
+
+        setTimeout(() => boton.innerText = 'Calcular',1000)
     }
 
     return(
@@ -39,7 +54,7 @@ const Figuras = () =>{
             <main className='figurasContainer'>
 
                 <section className="publicidad">
-                    
+                   
                 </section>
 
                 <section className='subContenedorFiguras'>
@@ -49,18 +64,18 @@ const Figuras = () =>{
                         <img src={require('../../assets/images/cuadrado.png')}/>
                     </article>
                     <article className="figuraInput">
-                        {/* { 
-                            id === 'Cuadrado' ? cuadrado :
-                            id === 'Triangulo' ? triangulo :
-                            null 
-                        } */}
                         <form onSubmit={redireccionar} className='formFigura'>
-                            <article className='gridForm'>
+                            {/* <article className='gridForm'>
                                 <label>Lado (A)</label>
                                 <input type="number" placeholder="0.0" className="inputFigura" required/>
                                 <label>Lado (B)</label>
                                 <input type="number" placeholder="0.0" className="inputFigura" required/>
-                            </article>
+                            </article> */}
+                        { 
+                            id === 'Cuadrado' ? cuadrado :
+                            id === 'Triangulo' ? triangulo :
+                            null 
+                        } 
 
                             <article className='botonCalcular'>
                                 <button>
