@@ -4,6 +4,7 @@ import './Figuras.css';
 import '../../App.css'
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import { Cuadrado, Triangulo } from '../Inputs/inputs';
 
 
 const Figuras = () =>{
@@ -11,41 +12,15 @@ const Figuras = () =>{
 
     const {id} = useParams();
 
-    let cuadrado = React.createElement(
-        'form',{
-            onSubmit:redireccionar,
-            className:'formFigura'
+    const prueba={
+        Cuadrado:{
+            descripcion:'Soy el cuadrado',
+            img: require('../../assets/images/cuadrado.png')
         },
-        'article',{
-            className: 'gridForm'
-        },
-            React.createElement('label', {className: 'formLabel'},'Lado (A)'),
-            React.createElement('input', {className:"inputFigura", placeholder:"0.0", type:'number'}),
-            React.createElement('label', {className: 'formLabel'},'Lado (B)'),
-            React.createElement('input', {className:"inputFigura", placeholder:"0.0", type:'number'})
-    );
-
-    let triangulo = React.createElement(
-        'ul', {
-            className: 'myList'
-        },
-            React.createElement('li', {className: 'li1'},'soy triangulo'),
-            React.createElement('li', {className: 'li1'},'soy triangulo'),
-            React.createElement('li', {className: 'li1'},'soy triangulo')
-    );
-
-    const redireccionar =(e)=>{
-       e.preventDefault();
-
-       calculando();
-    }
-
-    const calculando=()=>{
-        let boton = document.querySelector('button')
-
-        boton.innerText = 'Calculando......'
-
-        setTimeout(() => boton.innerText = 'Calcular',1000)
+        Triangulo:{
+            descripcion:'Soy el triangulo',
+            img: require('../../assets/images/triangulo.png')
+        }
     }
 
     return(
@@ -54,35 +29,21 @@ const Figuras = () =>{
             <main className='figurasContainer'>
 
                 <section className="publicidad">
-                   
+                   {prueba.Cuadrado.descripcion}
                 </section>
 
                 <section className='subContenedorFiguras'>
                     <h1>Área de un {id}</h1>
                     <p>Ingresa el ancho y largo para calcular. Utiliza punto como separador decimal.</p>
                     <article className="figuraImg">
-                        <img src={require('../../assets/images/cuadrado.png')}/>
+                        <img src={require(`../../assets/images/${id}.png`)}/>
                     </article>
                     <article className="figuraInput">
-                        <form onSubmit={redireccionar} className='formFigura'>
-                            {/* <article className='gridForm'>
-                                <label>Lado (A)</label>
-                                <input type="number" placeholder="0.0" className="inputFigura" required/>
-                                <label>Lado (B)</label>
-                                <input type="number" placeholder="0.0" className="inputFigura" required/>
-                            </article> */}
-                        { 
-                            id === 'Cuadrado' ? cuadrado :
-                            id === 'Triangulo' ? triangulo :
+                        {
+                            id === 'cuadrado' ? <Cuadrado/> :
+                            id === 'triangulo' ? <Triangulo/> :
                             null 
-                        } 
-
-                            <article className='botonCalcular'>
-                                <button>
-                                    Calcular
-                                </button>
-                            </article>
-                        </form>
+                        }
                     </article>
                 </section>
             </main>

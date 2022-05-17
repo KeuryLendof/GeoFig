@@ -18,7 +18,7 @@ const Principal = ({figuras, buscar}) =>{
 
                 {filtro.map((f)=>{
                     return(
-                        <section className="card" onClick={()=>redireccionar(f.nombre)}>
+                        <section className="card" onClick={()=>redireccionar(f.id)}>
                             <img src={f.imagen}/>
                             <h3>{f.nombre}</h3>
                         </section>

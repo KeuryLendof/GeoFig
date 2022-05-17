@@ -9,77 +9,77 @@ function App() {
 
   const figuras = [
     {
-      id: 1,
+      id: 'cuadrado',
       nombre: 'Cuadrado',
       imagen: require('./assets/images/cuadrado.png')
     },
     {
-      id: 2,
+      id: 'triangulo',
       nombre: 'Triangulo',
       imagen: require('./assets/images/triangulo.png')
     },
     {
-      id: 3,
+      id: 'circulo',
       nombre: 'Circulo',
       imagen: require('./assets/images/circulo.png')
     },
     {
-      id: 4,
+      id: 'rectangulo',
       nombre: 'Rectangulo',
       imagen: require('./assets/images/rectangulo.png')
     },
     {
-      id: 5,
+      id: 'rombo',
       nombre: 'Rombo',
       imagen: require('./assets/images/rombo.png')
     },
     {
-      id: 6,
+      id: 'trapecio',
       nombre: 'Trapecio',
       imagen: require('./assets/images/trapecio.png')
     },
     {
-      id: 7,
+      id: 'elipce',
       nombre: 'Elipse',
       imagen: require('./assets/images/elipse.png')
     },
     {
-      id: 8,
+      id: 'pentagono',
       nombre: 'Pentagono',
       imagen: require('./assets/images/pentagono.png')
     },
     {
-      id: 9,
+      id: 'hexagono',
       nombre: 'Hexagono',
       imagen: require('./assets/images/hexagono.png')
     },
     {
-      id: 10,
+      id: 'cilindro',
       nombre: 'Cilindro',
       imagen: require('./assets/images/cilindro.png')
     },
     {
-      id: 11,
+      id: 'cono',
       nombre: 'Cono',
       imagen: require('./assets/images/cono.png')
     },
     {
-      id: 12,
-      nombre: 'Cuadra',
+      id: 'cuadra',
+      nombre: 'Cubo',
       imagen: require('./assets/images/cuadra.png')
     },
     {
-      id: 13,
+      id: 'esfera',
       nombre: 'Esfera',
       imagen: require('./assets/images/esfera.png')
     },
     {
-      id: 14,
+      id: 'heptagono',
       nombre: 'Heptagono',
       imagen: require('./assets/images/heptagono.png')
     },
     {
-      id: 15,
+      id: 'octagono',
       nombre: 'Octagono',
       imagen: require('./assets/images/octagono.png')
     }
