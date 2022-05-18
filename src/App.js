@@ -39,7 +39,7 @@ function App() {
       imagen: require('./assets/images/trapecio.png')
     },
     {
-      id: 'elipce',
+      id: 'elipse',
       nombre: 'Elipse',
       imagen: require('./assets/images/elipse.png')
     },
