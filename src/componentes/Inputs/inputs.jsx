@@ -114,7 +114,6 @@ export function Circulo(){
     const calculo =()=>{
         setTimeout(() => setResultado(3.14159265*radio**2),800)
     }
-    //2042.82
 
     return(
         <form onSubmit={redireccionar} className='formFigura'>
@@ -146,19 +145,38 @@ export function Circulo(){
 
 export function Rectangulo(){
 
+    const [largo, setLargo] = useState(0);
+    const [ancho, setAncho] = useState(0);
+    const [resultado, setResultado] = useState(0);
+
+    const calculo =()=>{
+        setTimeout(() => setResultado(ancho*largo),800)
+    }
     return(
         <form onSubmit={redireccionar} className='formFigura'>
             <article className='gridForm'>
                 <label>Largo (a)</label>
-                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" onChange={e=> setLargo(e.target.value)} required/>
                 <label>Ancho (b)</label>
-                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" onChange={e=> setAncho(e.target.value)} required/>
             </article>
 
             <article className='botonCalcular'>
-                <button>
+                <button onClick={calculo}>
                     Calcular
                 </button>
+            </article>
+
+            <article className="resultado">
+                <span>
+                    <img src={require('../../assets/images/check.png')} alt=""/>
+                </span>
+                <span className="msg">Área = {resultado.toFixed(2)}</span>
+                <div className="close-btn" onClick={cerrarResultado}>
+                    <span>
+                        x
+                    </span>
+                </div>
             </article>
         </form>
     )
