@@ -42,7 +42,7 @@ export function Cuadrado(){
         <form onSubmit={redireccionar} className='formFigura'>
             <article className='gridForm'>
                 <label>Lado (A)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" onChange={e => setLado(e.target.value)} required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" onChange={e => setLado(e.target.value)} required/>
             </article>
 
             <article className='botonCalcular'>
@@ -84,9 +84,9 @@ export function Triangulo(){
         <form onSubmit={redireccionar} className='formFigura'>
             <article className='gridForm'>
                 <label>Base (b)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" onChange={e => setBase(e.target.value)} required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" onChange={e => setBase(e.target.value)} required/>
                 <label>Altura (h)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" onChange={e=> setAltura(e.target.value)} required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" onChange={e=> setAltura(e.target.value)} required/>
             </article>
 
             <article className='botonCalcular'>
@@ -116,7 +116,7 @@ export function Circulo(){
         <form onSubmit={redireccionar} className='formFigura'>
             <article className='gridForm'>
                 <label>Radio (r)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
             </article>
 
             <article className='botonCalcular'>
@@ -134,9 +134,9 @@ export function Rectangulo(){
         <form onSubmit={redireccionar} className='formFigura'>
             <article className='gridForm'>
                 <label>Largo (a)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
                 <label>Ancho (b)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
             </article>
 
             <article className='botonCalcular'>
@@ -154,9 +154,9 @@ export function Rombo(){
         <form onSubmit={redireccionar} className='formFigura'>
             <article className='gridForm'>
                 <label>Diagonal Menol (d)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
                 <label>Diagonal Mayor (D)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
             </article>
 
             <article className='botonCalcular'>
@@ -175,11 +175,11 @@ export function Trapecio(){
         <form onSubmit={redireccionar} className='formFigura'>
             <article className='gridForm'>
                 <label>Base mayor (B)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
                 <label>Base menor (b)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
                 <label>Altura (h)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
             </article>
 
             <article className='botonCalcular'>
@@ -198,9 +198,9 @@ export function Elipse(){
         <form onSubmit={redireccionar} className='formFigura'>
             <article className='gridForm'>
                 <label>Semieje mayor (a)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
                 <label>Semieje menor (b)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
             </article>
 
             <article className='botonCalcular'>
@@ -219,9 +219,9 @@ export function Pentagono(){
         <form onSubmit={redireccionar} className='formFigura'>
             <article className='gridForm'>
                 <label>Longitud (l)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
                 <label>Apotema (ap)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
             </article>
 
             <article className='botonCalcular'>
@@ -240,9 +240,9 @@ export function Hexagono(){
         <form onSubmit={redireccionar} className='formFigura'>
             <article className='gridForm'>
                 <label>Longitud (l)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
                 <label>Apotema (ap)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
             </article>
 
             <article className='botonCalcular'>
@@ -260,9 +260,9 @@ export function Cilindro(){
         <form onSubmit={redireccionar} className='formFigura'>
             <article className='gridForm'>
                 <label>Radio (r)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
                 <label>Altura (h)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
             </article>
 
             <article className='botonCalcular'>
@@ -280,9 +280,9 @@ export function Cono(){
         <form onSubmit={redireccionar} className='formFigura'>
             <article className='gridForm'>
                 <label>Radio (r)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
                 <label>Altura (h)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
             </article>
 
             <article className='botonCalcular'>
@@ -300,7 +300,7 @@ export function Cuadra(){
         <form onSubmit={redireccionar} className='formFigura'>
             <article className='gridForm'>
                 <label>Lado (a)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
             </article>
 
             <article className='botonCalcular'>
@@ -318,7 +318,7 @@ export function Esfera(){
         <form onSubmit={redireccionar} className='formFigura'>
             <article className='gridForm'>
                 <label>Radio (r)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
             </article>
 
             <article className='botonCalcular'>
@@ -337,9 +337,9 @@ export function Heptagono(){
         <form onSubmit={redireccionar} className='formFigura'>
             <article className='gridForm'>
                 <label>Longitud (l)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
                 <label>Apotema (ap)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
             </article>
 
             <article className='botonCalcular'>
@@ -358,9 +358,9 @@ export function Octagono(){
         <form onSubmit={redireccionar} className='formFigura'>
             <article className='gridForm'>
                 <label>Longitud (l)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
                 <label>Apotema (ap)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
             </article>
 
             <article className='botonCalcular'>
