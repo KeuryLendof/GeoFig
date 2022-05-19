@@ -223,22 +223,46 @@ export function Rombo(){
 
 export function Trapecio(){
 
-    
+    const [mayor, setMayor] = useState(0);
+    const [menor, setMenor] = useState(0);
+    const [altura, setAltura] = useState(0);
+    const [resultado, setResultado] = useState(0);
+
+
+    const calculo =()=>{
+        setTimeout(() => setResultado(((mayor+menor)/2)*altura),800)
+    }
+    // 55
+    // 45
+    // 10
+    // 500
     return(
         <form onSubmit={redireccionar} className='formFigura'>
             <article className='gridForm'>
                 <label>Base mayor (B)</label>
-                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" onChange={e=> setMayor(parseFloat(e.target.value))} required/>
                 <label>Base menor (b)</label>
-                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" onChange={e=> setMenor(parseFloat(e.target.value))} required/>
                 <label>Altura (h)</label>
-                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" onChange={e=> setAltura(e.target.value)} required/>
             </article>
 
             <article className='botonCalcular'>
-                <button>
+                <button onClick={calculo}>
                     Calcular
                 </button>
+            </article>
+
+            <article className="resultado">
+                <span>
+                    <img src={require('../../assets/images/check.png')} alt=""/>
+                </span>
+                <span className="msg">Área = {resultado.toFixed(2)}</span>
+                <div className="close-btn" onClick={cerrarResultado}>
+                    <span>
+                        x
+                    </span>
+                </div>
             </article>
         </form>
     )
