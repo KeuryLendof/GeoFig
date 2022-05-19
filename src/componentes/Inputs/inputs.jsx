@@ -387,19 +387,39 @@ export function Hexagono(){
 
 export function Cilindro(){
 
+    const [radio, setRadio] = useState(0);
+    const [altura, setAltura] = useState(0);
+    const [resultado, setResultado] = useState(0);
+
+    //let problema = 2*3.14159265*radio;
+    const calculo =()=>{
+        setTimeout(() => setResultado(2*3.14159265*radio*(radio+altura)),800)
+    }
     return(
         <form onSubmit={redireccionar} className='formFigura'>
             <article className='gridForm'>
                 <label>Radio (r)</label>
-                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" onChange={e=> setRadio(parseFloat(e.target.value))} required/>
                 <label>Altura (h)</label>
-                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" onChange={e=> setAltura(parseFloat(e.target.value))} required/>
             </article>
 
             <article className='botonCalcular'>
-                <button>
+                <button onClick={calculo}>
                     Calcular
                 </button>
+            </article>
+
+            <article className="resultado">
+                <span>
+                    <img src={require('../../assets/images/check.png')} alt=""/>
+                </span>
+                <span className="msg">Área = {resultado.toFixed(2)}</span>
+                <div className="close-btn" onClick={cerrarResultado}>
+                    <span>
+                        x
+                    </span>
+                </div>
             </article>
         </form>
     )
