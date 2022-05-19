@@ -1,3 +1,4 @@
+import { useState } from "react";
 
 const redireccionar =(e)=>{
     e.preventDefault();
@@ -15,17 +16,38 @@ const calculando=()=>{
 
 export function Cuadrado(){
 
+    const [lado, setLado] = useState(0);
+
+    let resultado = lado*lado;
+
+    const calculo =()=>{
+        console.log(lado)
+        console.log(resultado)
+    }
+
     return(
         <form onSubmit={redireccionar} className='formFigura'>
             <article className='gridForm'>
                 <label>Lado (A)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" placeholder="0.0" className="inputFigura" onChange={e => setLado(e.target.value)} required/>
             </article>
 
             <article className='botonCalcular'>
-                <button>
+                <button onClick={calculo}>
                     Calcular
                 </button>
+            </article>
+
+            <article className="resultado">
+                <span>
+                    <img src={require('../../assets/images/check.png')} alt=""/>
+                </span>
+                <span className="msg">El area del cuadrado es: 333</span>
+                <div className="close-btn">
+                    <span>
+                        x
+                    </span>
+                </div>
             </article>
         </form>
     )
