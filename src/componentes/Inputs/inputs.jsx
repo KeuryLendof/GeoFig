@@ -12,17 +12,30 @@ const calculando=()=>{
     boton.innerText = 'Calculando......'
 
     setTimeout(() => boton.innerText = 'Calcular',1000)
+
+    setTimeout(() => Resultado(),1000)
+}
+
+const Resultado=()=>{
+    let result = document.querySelector('.resultado')
+
+    result.style.display = 'block';
+}
+
+const cerrarResultado=()=>{
+    let result = document.querySelector('.resultado')
+
+    result.style.display = 'none';
 }
 
 export function Cuadrado(){
 
     const [lado, setLado] = useState(0);
+    const [resultado, setResultado] = useState(0);
 
-    let resultado = lado*lado;
 
     const calculo =()=>{
-        console.log(lado)
-        console.log(resultado)
+        setTimeout(() => setResultado(lado*lado),800)
     }
 
     return(
@@ -42,8 +55,8 @@ export function Cuadrado(){
                 <span>
                     <img src={require('../../assets/images/check.png')} alt=""/>
                 </span>
-                <span className="msg">El area del cuadrado es: 333</span>
-                <div className="close-btn">
+                <span className="msg">Área = {resultado}</span>
+                <div className="close-btn" onClick={cerrarResultado}>
                     <span>
                         x
                     </span>

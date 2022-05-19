@@ -12,29 +12,18 @@ const Figuras = () =>{
 
     const {id} = useParams();
 
-    const prueba={
-        Cuadrado:{
-            descripcion:'Soy el cuadrado',
-            img: require('../../assets/images/cuadrado.png')
-        },
-        Triangulo:{
-            descripcion:'Soy el triangulo',
-            img: require('../../assets/images/triangulo.png')
-        }
-    }
-
     return(
         <div className='App'>
             <Header/>
             <main className='figurasContainer'>
 
                 <section className="publicidad">
-                   {prueba.Cuadrado.descripcion}
+                   
                 </section>
 
                 <section className='subContenedorFiguras'>
                     <h1>Área de un {id}</h1>
-                    <p>Ingresa el ancho y largo para calcular. Utiliza punto como separador decimal.</p>
+                    <p>El área de una figura geométrica se refiere a la cantidad de superficie encerrada por su perímetro. Dependiendo de la figura, la fórmula para calcular su área es diferente.</p>
                     <article className="figuraImg">
                         <img src={require(`../../assets/images/${id}.png`)}/>
                     </article>
