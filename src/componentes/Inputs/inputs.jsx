@@ -184,19 +184,38 @@ export function Rectangulo(){
 
 export function Rombo(){
 
+    const [menor, setMenor] = useState(0);
+    const [mayor, setMayor] = useState(0);
+    const [resultado, setResultado] = useState(0);
+
+    const calculo =()=>{
+        setTimeout(() => setResultado((menor*mayor)/2),800)
+    }
     return(
         <form onSubmit={redireccionar} className='formFigura'>
             <article className='gridForm'>
-                <label>Diagonal Menol (d)</label>
-                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
+                <label>Diagonal Menor (d)</label>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" onChange={e=>setMenor(e.target.value)} required/>
                 <label>Diagonal Mayor (D)</label>
-                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" onChange={e=>setMayor(e.target.value)} required/>
             </article>
 
             <article className='botonCalcular'>
-                <button>
+                <button onClick={calculo}>
                     Calcular
                 </button>
+            </article>
+
+            <article className="resultado">
+                <span>
+                    <img src={require('../../assets/images/check.png')} alt=""/>
+                </span>
+                <span className="msg">Área = {resultado.toFixed(2)}</span>
+                <div className="close-btn" onClick={cerrarResultado}>
+                    <span>
+                        x
+                    </span>
+                </div>
             </article>
         </form>
     )
