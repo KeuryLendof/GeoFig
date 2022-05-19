@@ -76,10 +76,6 @@ export function Triangulo(){
         setTimeout(() => setResultado((base*altura)/2),800)
     }
 
-    // 25.5
-    // 44
-    // Área = 561.00
-
     return(
         <form onSubmit={redireccionar} className='formFigura'>
             <article className='gridForm'>
@@ -112,17 +108,37 @@ export function Triangulo(){
 
 export function Circulo(){
 
+    const [radio, setRadio] = useState(0);
+    const [resultado, setResultado] = useState(0);
+
+    const calculo =()=>{
+        setTimeout(() => setResultado(3.14159265*radio**2),800)
+    }
+    //2042.82
+
     return(
         <form onSubmit={redireccionar} className='formFigura'>
             <article className='gridForm'>
                 <label>Radio (r)</label>
-                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" onChange={e=>setRadio(e.target.value)} required/>
             </article>
 
             <article className='botonCalcular'>
-                <button>
+                <button onClick={calculo}>
                     Calcular
                 </button>
+            </article>
+
+            <article className="resultado">
+                <span>
+                    <img src={require('../../assets/images/check.png')} alt=""/>
+                </span>
+                <span className="msg">Área = {resultado.toFixed(2)}</span>
+                <div className="close-btn" onClick={cerrarResultado}>
+                    <span>
+                        x
+                    </span>
+                </div>
             </article>
         </form>
     )
