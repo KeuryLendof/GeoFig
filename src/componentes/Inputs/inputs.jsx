@@ -68,19 +68,43 @@ export function Cuadrado(){
 
 export function Triangulo(){
 
+    const [base, setBase] = useState(0);
+    const [altura, setAltura] = useState(0)
+    const [resultado, setResultado] = useState(0);
+
+    const calculo =()=>{
+        setTimeout(() => setResultado((base*altura)/2),800)
+    }
+
+    // 25.5
+    // 44
+    // Área = 561.00
+
     return(
         <form onSubmit={redireccionar} className='formFigura'>
             <article className='gridForm'>
                 <label>Base (b)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" placeholder="0.0" className="inputFigura" onChange={e => setBase(e.target.value)} required/>
                 <label>Altura (h)</label>
-                <input type="number" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" placeholder="0.0" className="inputFigura" onChange={e=> setAltura(e.target.value)} required/>
             </article>
 
             <article className='botonCalcular'>
-                <button>
+                <button onClick={calculo}>
                     Calcular
                 </button>
+            </article>
+
+            <article className="resultado">
+                <span>
+                    <img src={require('../../assets/images/check.png')} alt=""/>
+                </span>
+                <span className="msg">Área = {resultado}</span>
+                <div className="close-btn" onClick={cerrarResultado}>
+                    <span>
+                        x
+                    </span>
+                </div>
             </article>
         </form>
     )
