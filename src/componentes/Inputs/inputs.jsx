@@ -467,17 +467,35 @@ export function Cono(){
 
 export function Cuadra(){
 
+    const [lado, setLado] = useState(0);
+    const [resultado, setResultado] = useState(0);
+
+    const calculo =()=>{
+        setTimeout(() => setResultado(6*lado**2),800)
+    }
     return(
         <form onSubmit={redireccionar} className='formFigura'>
             <article className='gridForm'>
                 <label>Lado (a)</label>
-                <input type="number" step="any" placeholder="0.0" className="inputFigura" required/>
+                <input type="number" step="any" placeholder="0.0" className="inputFigura" onChange={e=> setLado(e.target.value)} required/>
             </article>
 
             <article className='botonCalcular'>
-                <button>
+                <button onClick={calculo}>
                     Calcular
                 </button>
+            </article>
+
+            <article className="resultado">
+                <span>
+                    <img src={require('../../assets/images/check.png')} alt=""/>
+                </span>
+                <span className="msg">Área = {resultado.toFixed(2)}</span>
+                <div className="close-btn" onClick={cerrarResultado}>
+                    <span>
+                        x
+                    </span>
+                </div>
             </article>
         </form>
     )
