@@ -92,7 +92,7 @@ function App() {
     <div className="App">
       <Header />
       <Inicio />
-      <div className="join" id="search">
+      <div className="join" id="buscar">
         <div className="join_container">
           <h2 className="join_title">Busca tus figuras geometricas aqui!</h2>
           <form action="" className="join_form">

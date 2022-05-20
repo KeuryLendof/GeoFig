@@ -29,9 +29,9 @@ class Header extends Component{
                     </a>
                     <div class="navbar-links">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#figuras">Figuras</a></li>
+                            <li><a href="#buscar">Buscar</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
                 </header>

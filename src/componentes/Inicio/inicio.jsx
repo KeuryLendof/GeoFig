@@ -17,7 +17,7 @@ const inicio =()=>{
 
                 <p className="productive_paragraph">ApiCrypto provides a fundamental analysis of the crypto market. In addition to tracking price, volume and market capitalisation, ApiCrypto tracks community growth, open-source code development, major events and on-chain metrics.</p>
 
-                <a href="#" className="productive_cta">
+                <a href="#figuras" className="productive_cta">
                     Ir a calcular
                     <svg className="productive_arrow"
                         width="24"

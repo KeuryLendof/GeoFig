@@ -6,7 +6,7 @@ const Footer = ()=>{
 
 
     return(
-        <footer className="footer">
+        <footer className="footer" id="contact">
 
             <h2>Contact Me</h2>
 
