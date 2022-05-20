@@ -25,7 +25,7 @@ const Figuras = () =>{
                     <h1>Área de un {id}</h1>
                     <p>El área de una figura geométrica se refiere a la cantidad de superficie encerrada por su perímetro. Dependiendo de la figura, la fórmula para calcular su área es diferente.</p>
                     <article className="figuraImg">
-                        <img src={require(`../../assets/images/${id}.png`)}/>
+                        <img src={require(`../../assets/images/${id}.png`)} alt=""/>
                     </article>
                     <article className="figuraInput">
                         {

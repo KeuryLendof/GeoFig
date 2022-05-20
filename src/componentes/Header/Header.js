@@ -19,7 +19,7 @@ class Header extends Component{
             <div className="contenedorHeader">
                 <header>
                     <a href='/' class="brand-title">
-                        <img src={require('../../assets/images/forma-abstracta.png')} alt/>
+                        <img src={require('../../assets/images/forma-abstracta.png')} alt=""/>
                         GeoFig
                     </a>
                     <a href="#" class="toggle-button">

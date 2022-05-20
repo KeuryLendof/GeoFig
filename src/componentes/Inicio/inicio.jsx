@@ -1,4 +1,3 @@
-import react from "react";
 import imagenP from '../../assets/images/abstracto.png'
 import './inicio.css'
 
