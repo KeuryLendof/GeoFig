@@ -10,7 +10,7 @@ const calculando=()=>{
     let boton = document.querySelector('button')
 
     boton.innerText = 'Calculando......'
-
+    
     setTimeout(() => boton.innerText = 'Calcular',1000)
 
     setTimeout(() => Resultado(),1000)
