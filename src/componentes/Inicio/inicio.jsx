@@ -15,7 +15,7 @@ const inicio =()=>{
 
                 <h3 className="productive_title">Calcular el area de las figuras geometricas</h3>
 
-                <p className="productive_paragraph">ApiCrypto provides a fundamental analysis of the crypto market. In addition to tracking price, volume and market capitalisation, ApiCrypto tracks community growth, open-source code development, major events and on-chain metrics.</p>
+                <p className="productive_paragraph">GeoFig es un sitio en el cual podras calcular el area de varias figuras geometricas. Ingresa los parámetros y calcula el área de formas geométricas en 2 y 3 dimensiones, de manera rápida y sencilla.</p>
 
                 <a href="#figuras" className="productive_cta">
                     Ir a calcular
