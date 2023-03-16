@@ -4,86 +4,69 @@
     margin: 0 auto;
     padding: 10px 0;
     text-align: center;
+    color: #2ABCC8;
 }
 
-.footer h2{
-    font-size: 2rem;
-    color: #001858;
+.footer .creador{
+    height: 2.8em;
+ width: 60%;
+ background: transparent;
+ -webkit-animation: jello-horizontal 0.9s both;
+ animation: jello-horizontal 0.9s both;
+ border: 3px solid #2ABCC8;
+ outline: none;
+ color: #2ABCC8;
+ font-size: 20px;
+ cursor: pointer;
+ display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .creador svg{
+    width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
 }
 
-.formContacto{
-    width: 70%;
-    margin: 0 auto;
-}
-
-.formContacto button{
-    display: inline-block;
-    background-color: #F582AE;
-    padding: 12px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    border: none;
-    margin-top: 6px;
-    font: inherit;
-}
-
-.formContacto button img{
-    width: 25px;
-    margin-right: .1em;
-    vertical-align: middle;
-    margin-bottom: 3px;
-}
-
-.join_inputt{
-    padding: 15px 20px;
-    font: inherit;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-    margin-bottom: 0.5em;
-    width: 90%;
-}
-
-textarea{
-    margin-top: 6px;
-    /* padding: 30px; */
-    padding: 15px 20px;
-    width: 90%;
-    height: 90px;
-    max-height: 260px;
-    font-size: 1rem;
-    background: #fff;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    resize: none;
-}
-
-textarea::-webkit-scrollbar{
-    width: 0px;
-}
-
-.footer__social{
-    padding: 30px 0;
-    margin-top: 2em;
-    margin: 0 auto;
-}
-
-.footer__media{
-    width: 40px;
-    height: 40px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 28px;
-}
-
-.footer__media img{
-    width: 40px;
-    height: 40px;
-}
-
-.footer__media--last{
-    margin-right: 0;
-}
-
+.footer .creador:hover {
+    background: #2ABCC8;
+    color: #ffffff;
+    animation: squeeze3124 0.9s both;
+   }
+   
+   @keyframes squeeze3124 {
+    0% {
+     -webkit-transform: scale3d(1, 1, 1);
+     transform: scale3d(1, 1, 1);
+    }
+   
+    30% {
+     -webkit-transform: scale3d(1.25, 0.75, 1);
+     transform: scale3d(1.25, 0.75, 1);
+    }
+   
+    40% {
+     -webkit-transform: scale3d(0.75, 1.25, 1);
+     transform: scale3d(0.75, 1.25, 1);
+    }
+   
+    50% {
+     -webkit-transform: scale3d(1.15, 0.85, 1);
+     transform: scale3d(1.15, 0.85, 1);
+    }
+   
+    65% {
+     -webkit-transform: scale3d(0.95, 1.05, 1);
+     transform: scale3d(0.95, 1.05, 1);
+    }
+   
+    75% {
+     -webkit-transform: scale3d(1.05, 0.95, 1);
+     transform: scale3d(1.05, 0.95, 1);
+    }
+   
+    100% {
+     -webkit-transform: scale3d(1, 1, 1);
+     transform: scale3d(1, 1, 1);
+    }
+   }

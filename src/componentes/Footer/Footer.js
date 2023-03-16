@@ -3,38 +3,14 @@ import "./Footer.css"
 
 const Footer = ()=>{
 
-
+    const redireccionar=()=>{
+        window.open("https://contact-with-me.vercel.app/", '_blank');
+    }
 
     return(
         <footer className="footer" id="contact">
-
-            <h2>Contact Me</h2>
-
-            <form className="formContacto"
-                name="formulario-contacto"
-                action="https://formsubmit.co/lendofkeury@gmail.com"
-                method="post"
-            >
-                <input type="email" name="email" placeholder="Email" className="join_inputt" required/>
-
-                <textarea id="texto" name="mensaje" placeholder="Mensaje" required></textarea>
-
-                <button>
-                    <img src={require('../../assets/images/gmail (2).png')} alt=''/>
-                    Enviar
-                </button>
-            </form>
-
-            <section>
-
-                <div className="footer__social">
-                    <a href="https://github.com/KeuryLendof" target='_blank' rel="noreferrer" className="footer__media"><img src={require('../../assets/images/github (3).png')} className="footer__img" alt=""/></a>
-                    <a href="https://twitter.com/KeuryLendof1" target='_blank' rel="noreferrer" className="footer__media"><img src={require('../../assets/images/gorjeo (2).png')} className="footer__img" alt=""/></a>
-                    <a href="https://www.linkedin.com/in/keury-lendof-599b82185/" target='_blank' rel="noreferrer" className="footer__media footer__media--last"><img src={require('../../assets/images/linkedin (1).png')} className="footer__img" alt=""/></a>
-                </div>
-
-            </section>
-
+            {/* <h4>Copyright © 2023; Creador de la pagina:</h4> */}
+            <button onClick={()=>redireccionar()} className="creador"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"></path></svg> Keury Lendof</button>
         </footer>
     )
 }

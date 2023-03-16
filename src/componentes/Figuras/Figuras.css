@@ -3,7 +3,7 @@
 }
 
 .publicidad{
-  height: 30vh;
+  height: 20vh;
 }
 
 .figurasContainer{
@@ -15,10 +15,10 @@
 }
 
 .subContenedorFiguras{
-  width: 60%;
+  width: 70%;
+  padding: 15px;
   margin: 0 auto;
-  background-color: #8BD3DD;
-  border-radius: 15px;
+  background-color: #2ABCC8;
   padding: 15px;
 }
 
@@ -39,22 +39,30 @@
 
 
 .figuraInput .formFigura .botonCalcular{
-  width: 97%;
+  width: 100%;
   text-align: right;
 }
 
 .figuraInput .formFigura .botonCalcular button{
-  background-color: #F582AE;
-  padding: 12px 20px;
-  border-radius: 5px;
-  cursor: pointer;
+  background-color: #2ABCC8;
+  box-shadow: #094c66 4px 4px 0px;
+  padding: 12px 10px;
+  color: #fff;
   border: none;
-  margin-top: 3px;
-  margin-bottom: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  min-width: 120px;
+  transition: transform 200ms, box-shadow 200ms;
+}
+.figuraInput .formFigura .botonCalcular button:active {
+  transform: translateY(4px) translateX(4px);
+  box-shadow: #094c66 0px 0px 0px;
 }
 
 .formFigura .gridForm{
-  width: 96%;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -67,7 +75,6 @@
 .formFigura .inputFigura{
   padding: 15px 20px;
   font: inherit;
-  border-radius: 5px;
   outline: none;
   border: none;
   margin-bottom: 0.5em;
@@ -80,11 +87,13 @@
   background: #c7e67f;
   padding: 20px 40px;
   margin: 0 auto;
+  margin-top: 15px;
   position: relative;
   border-radius: 4px;
   border-left: 8px solid #3bb54a;
   overflow: hidden;
   display: none;
+  z-index: 2;
   /* pointer-events: none; */
 }
 
@@ -129,6 +138,9 @@
 @media screen and (max-width: 700px){
   .subContenedorFiguras{
     width: 85%;
+  }
+  .figuraInput .formFigura .botonCalcular{
+    width: 100%;
   }
 }
 

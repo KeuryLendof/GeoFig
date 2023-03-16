@@ -1,0 +1,104 @@
+.top-container-operaciones{
+    background-color: #FFFACE;
+    height: 100vh;
+    position: relative;
+}
+
+.main-operaciones{
+    position: relative;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-operaciones .operaciones{
+    position: relative;
+    max-width: 600px;
+}
+.main-operaciones .operaciones h2{
+    color: #333;
+    font-size: 4em;
+    font-weight: 700;
+    padding: 2px 0;
+    margin-bottom: .1em;
+    line-height: 1;
+}
+.main-operaciones .operaciones h2 span{
+    color: #2ABCC8;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.main-operaciones .operaciones p{
+    line-height: 1.7;
+    margin-bottom: 1em;
+}
+
+.main-operaciones .imagen-operacion{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+   
+}
+.main-operaciones .imagen-operacion img{
+    max-width: 340px;
+    transform: rotate(-10deg);
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2abbc8b0;
+    clip-path: circle(650px at right 850px);
+}
+
+@media screen and (max-width: 720px){
+
+    .top-container-operaciones{
+        background-color: #FFFACE;
+        height: auto;
+        /* word-break: break-all; */
+    }
+
+    .main-operaciones{
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .main-operaciones .imagen-operacion{
+        max-width: 100%;
+        justify-content: center;
+        order: 1;
+       
+    }
+    .main-operaciones .imagen-operacion img{
+        max-width: 240px;
+        transform: rotate(-5deg);
+    }
+    .main-operaciones .operaciones{
+        order: 2;
+    }
+    .circle{
+        background-color: #2abbc87a;
+        clip-path: circle(350px at center bottom);
+        /* display: none; */
+    }
+    .main-operaciones .imagen-operacion{
+        width: 100%;
+    }
+    .main-operaciones .operaciones{
+        max-width: 100%;
+    }
+    .main-operaciones .operaciones h2{
+        font-size: 3em;        
+    }
+    .main-operaciones .operaciones h2 span{
+        font-size: 1em;
+        font-weight: 900;
+    }
+}

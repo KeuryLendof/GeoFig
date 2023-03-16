@@ -92,15 +92,17 @@ function App() {
     <div className="App">
       <Header />
       <Inicio />
-      <div className="join" id="buscar">
-        <div className="join_container">
-          <h2 className="join_title">Busca tus figuras geometricas aqui!</h2>
-          <form action="" className="join_form">
-            <input type="text" placeholder="Ejemplo 'cuadrado' " className="join_input" onChange={e => setBuscar(e.target.value)} />
-          </form>
+      <main className="sub-container">
+        <div className="join" id="buscar">
+          <div className="join_container">
+            <h2 className="join_title">Busca tus figuras geometricas aqui!</h2>
+            <form action="" className="join_form">
+              <input type="text" placeholder="Ejemplo 'cuadrado' " className="join_input" onChange={e => setBuscar(e.target.value)} />
+            </form>
+          </div>
         </div>
-      </div>
-      <Principal figuras={figuras} buscar={buscar}/>
+        <Principal figuras={figuras} buscar={buscar}/>
+      </main>
       <Footer />
     </div>
 

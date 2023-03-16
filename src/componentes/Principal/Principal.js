@@ -8,7 +8,8 @@ const Principal = ({figuras, buscar}) =>{
     )
 
     const redireccionar = (id) => {
-        window.location.href=`/figuras/${id}`;
+        // window.location.href=`/figuras/${id}`;
+        window.location.href=`/operaciones/${id}`;
     }
 
     return(
@@ -19,6 +20,7 @@ const Principal = ({figuras, buscar}) =>{
                 {filtro.map((f)=>{
                     return(
                         <section className="card" id="figuras" onClick={()=>redireccionar(f.id)}>
+                            <div class="ag-courses-item_bg"></div>
                             <img src={f.imagen} alt=""/>
                             <h3>{f.nombre}</h3>
                         </section>
